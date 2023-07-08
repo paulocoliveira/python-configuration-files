@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "cloud-grid"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

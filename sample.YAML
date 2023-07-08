@@ -1,0 +1,4 @@
+# Sample YAML Configuration File
+DATABASE:
+  username: admin
+  password: password123
