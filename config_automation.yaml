@@ -1,0 +1,10 @@
+Application:
+  url: https://ecommerce-playground.lambdatest.io/index.php?route=account/register
+
+Credentials:
+  username: testuser
+  password: testpassword
+
+Timeouts:
+  page_load: 10
+  element_visibility: 5

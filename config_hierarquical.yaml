@@ -1,0 +1,26 @@
+# Sample YAML file with hierarchical structure
+
+# Application Configuration
+application:
+  name: My Application
+  version: 1.0
+
+# Database Configuration
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  password: password123
+
+# API Configuration
+api:
+  endpoint: https://api.example.com
+  timeout: 30
+  headers:
+    - Content-Type: application/json
+    - Authorization: Bearer xxxxxxxx
+
+# Logging Configuration
+logging:
+  log_level: INFO
+  log_file: /var/log/application.log

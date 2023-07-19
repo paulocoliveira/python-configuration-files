@@ -4,8 +4,10 @@ with open('sample.json', 'r') as file:
     config = json.load(file)
 
 # Accessing configuration values
-username = config['Database']['username']
-password = config['Database']['password']
+url = config['General']['url']
+selenium_version = config['General']['selenium_version']
+timeout = config['General']['timeout']
 
-print(username)
-print(password)
+print(url)
+print(selenium_version)
+print(timeout)

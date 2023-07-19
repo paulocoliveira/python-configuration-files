@@ -4,8 +4,10 @@ with open('sample.YAML', 'r') as file:
     config = yaml.safe_load(file)
 
 # Accessing configuration values
-username = config['DATABASE']['username']
-password = config['DATABASE']['password']
+url = config['GENERAL']['url']
+selenium_version = config['GENERAL']['selenium_version']
+timeout = config['GENERAL']['timeout']
 
-print(username)
-print(password)
+print(url)
+print(selenium_version)
+print(timeout)

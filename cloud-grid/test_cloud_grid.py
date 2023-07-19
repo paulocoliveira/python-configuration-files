@@ -8,7 +8,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read('config/config.ini')
 
-@pytest.fixture(params=["chrome-Windows11", "firefox-macOSVentura"],scope="class")
+@pytest.fixture(params=["testwin", "testmac"],scope="class")
 def driver(request):
     username = os.getenv("LT_USERNAME")
     config.set('LOGIN', 'username', username)
@@ -21,14 +21,14 @@ def driver(request):
 
     gridUrl = config.get('CLOUDGRID', 'grid_url')
 
-    if request.param == "chrome-Windows11":
+    if request.param == "testwin":
         web_driver = webdriver.ChromeOptions()
         config_win = configparser.ConfigParser()
         config_win.read('config/config_win.ini')
         platform = config_win.get('ENV', 'platform')
         browser_name = config_win.get('ENV', 'browser_name')
     
-    if request.param == "firefox-macOSVentura":
+    if request.param == "testmac":
         web_driver = webdriver.FirefoxOptions()
         config_mac = configparser.ConfigParser()
         config_mac.read('config/config_mac.ini')

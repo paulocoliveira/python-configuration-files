@@ -1,0 +1,23 @@
+# Sample YAML file for functional areas configuration
+
+# Database Settings
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  password: password123
+
+# API Configurations
+api:
+  endpoint: https://api.example.com
+  timeout: 30
+
+# UI Preferences
+ui:
+  theme: dark
+  language: en_US
+
+# Logging Parameters
+logging:
+  log_level: INFO
+  log_file: /var/log/application.log

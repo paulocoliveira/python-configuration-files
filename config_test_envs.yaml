@@ -1,0 +1,25 @@
+# Sample YAML file for test environment configuration
+
+# Development Environment
+development:
+  database:
+    host: localhost
+    port: 5432
+    username: devadmin
+    password: devpassword
+
+# Staging Environment
+staging:
+  database:
+    host: stagingdb.example.com
+    port: 5432
+    username: stagingadmin
+    password: stagingpassword
+
+# Production Environment
+production:
+  database:
+    host: proddb.example.com
+    port: 5432
+    username: prodadmin
+    password: prodpassword

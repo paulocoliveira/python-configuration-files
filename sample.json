@@ -1,6 +1,7 @@
 {
-    "Database": {
-        "username": "admin",
-        "password": "password123"
+    "General": {
+        "url": "https://ecommerce-playground.lambdatest.io/index.php?route=account/register",
+        "selenium_version": "4.8.0",
+        "timeout": 15
     }
 }
