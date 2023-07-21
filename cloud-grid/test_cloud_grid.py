@@ -66,7 +66,7 @@ def test_simple_demo_form(driver):
 
     # Find an input element by its ID and enter text
     input_element = driver.find_element(By.ID, "user-message")
-    input_element.send_keys("This is an end parameter text!")
+    input_element.send_keys("This is an configuration file test!")
 
     # Find an element by its ID and click on it
     element = driver.find_element(By.ID, "showInput")
@@ -74,4 +74,4 @@ def test_simple_demo_form(driver):
 
     # Find an element by its ID and extract its text
     element = driver.find_element(By.ID, "message")
-    assert element.text == "This is an end parameter text!"
+    assert element.text == "This is an configuration file test!"
